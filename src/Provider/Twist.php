@@ -57,7 +57,19 @@ class Twist extends AbstractProvider
      */
     protected function getDefaultScopes()
     {
-        return [];
+        return [
+            'user:read',
+            'workspaces:read',
+            'channels:read',
+            'threads:read',
+            'comments:read',
+            'comments:read',
+            'messages:read',
+            'reactions:read',
+            'search:read',
+            'attachments:read',
+            'notifications:read'
+        ];
     }
 
     /**
@@ -68,7 +80,7 @@ class Twist extends AbstractProvider
      */
     protected function getScopeSeparator()
     {
-        return ' ';
+        return ',';
     }
 
     /**
