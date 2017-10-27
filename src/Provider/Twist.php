@@ -22,7 +22,7 @@ class Twist extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return 'https://twistapp.com/oauth/authorize';
+        return 'https://api.twistapp.com/oauth/authorize';
     }
 
     /**
@@ -32,7 +32,7 @@ class Twist extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://twistapp.com/oauth/access_token';
+        return 'https://api.twistapp.com/oauth/access_token';
     }
 
     /**
@@ -44,7 +44,7 @@ class Twist extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://twistapp.com/api/v2/users/getone';
+        return 'https://api.twistapp.com/api/v2/users/getone';
     }
 
     /**
